@@ -1,26 +1,67 @@
-<<!DOCTYPE html>
-  <html lang="pl">
+<!DOCTYPE html>
+<html lang="en">
 
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Currency converter</title>
-    <title>Free currency calculator to convert between most of the global currencies</title>
-    <meta name="description" content="Strona do nauki w szkoleniu YouCode">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
-      integrity="sha256-l85OmPOjvil/SOvVt3HnSSjzF1TUMyT9eV0c2BzEGzU=" crossorigin="anonymous" />
-    <link href="css/global.css" rel="stylesheet">
-    <link href="css/header.css" rel="stylesheet">
-    <link href="css/container.css" rel="stylesheet">
-    <link href="css/form.css" rel="stylesheet">
-    <link href="css/table.css" rel="stylesheet">
-    <link href="css/footer.css" rel="stylesheet">
-    <script defer src="js/script.js"></script>
-  </head>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Currency converter</title>
+  <meta name="description" content="Free currency calculator to convert between most of the global currencies">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+    integrity="sha256-l85OmPOjvil/SOvVt3HnSSjzF1TUMyT9eV0c2BzEGzU=" crossorigin="anonymous" />
+  <link href="css/global.css" rel="stylesheet">
+  <link href="css/header.css" rel="stylesheet">
+  <link href="css/container.css" rel="stylesheet">
+  <link href="css/form.css" rel="stylesheet">
+  <link href="css/table.css" rel="stylesheet">
+  <link href="css/footer.css" rel="stylesheet">
+  <script defer src="js/script.js"></script>
+</head>
 
-  <body>
+<body>
+  <main class="container">
+    <section class="converter">
+      <header class="converter__header"></header>
+      <h1 class="converter__heading"><strong>Currency converter</strong></h1>
+      <p class="converter__paragraph">
+        Free currency calculator to convert between most of the global currencies
+      </p>
+      </header>
+      <form class="form">
+        <fieldset class="form__fieldset">
+          <legend class="form__legend">Currency calculator</legend>
 
-  </body>
+          <label class="form__label">*Amount to exchange&#58</span>
+            <input class="js-amount" type="number" name="amount" placeholder="Please enter the amount" required
+              step="0.01" value="100">
+          </label>
 
-  </html>
+          <label class="form__label">From&#58
+            <select class="js-selectFrom">
+              <option value="PLN" selected>PLN</option>
+              <option value="EUR">EUR</option>
+              <option value="USD">USD</option>
+              <option value="GBP">GBP</option>
+            </select>
+          </label>
+
+          <label class="form__label">To&#58
+            <select class="js-selectTo">
+              <option value="EUR" selected>EUR</option>
+              <option value="GBP">GBP</option>
+              <option value="USD">USD</option>
+              <option value="PLN">PLN</option>
+            </select>
+          </label>
+          <button class="js-submitButton">Calculate</button>
+          <p class="form__result">Result&#58<span class="js-resultExchange"></span>
+        </fieldset>
+      </form>
+    </section>
+
+  </main>
+  <footer>
+
+  </footer>
+</body>
+
+</html>
