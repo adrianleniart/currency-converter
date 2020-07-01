@@ -31,28 +31,28 @@
           <legend class="form__legend">Currency calculator</legend>
 
           <label class="form__label">*Amount to exchange&#58</span>
-            <input class="js-amount" type="number" name="amount" placeholder="Please enter the amount " required
-              step="0.01" value="100">
+            <input class="form__input js-amount" type="number" name="amount" placeholder="Please enter the amount"
+              required step="0.01">
           </label>
 
           <label class="form__label">From&#58
-            <select class="js-selectFrom">
-              <option value="PLN" selected>PLN</option>
-              <option value="EUR">EUR</option>
-              <option value="USD">USD</option>
-              <option value="GBP">GBP</option>
+            <select class="form__select js-selectFrom">
+              <option class="form__option" value="PLN" selected>PLN</option>
+              <option class="form__option" value="EUR">EUR</option>
+              <option class="form__option" value="USD">USD</option>
+              <option class="form__option" value="GBP">GBP</option>
             </select>
           </label>
 
           <label class="form__label">To&#58
-            <select class="js-selectTo">
-              <option value="EUR" selected>EUR</option>
-              <option value="GBP">GBP</option>
-              <option value="USD">USD</option>
-              <option value="PLN">PLN</option>
+            <select class=" form__select js-selectTo">
+              <option class="form__option" value="EUR" selected>EUR</option>
+              <option class="form__option" value="GBP">GBP</option>
+              <option class="form__option" value="USD">USD</option>
+              <option class="form__option" value="PLN">PLN</option>
             </select>
           </label>
-          <button class="js-submitButton">Calculate</button>
+          <button class="form__submit js-submitButton">Calculate</button>
           <p class="form__result">Result&#58<span class="js-resultExchange"></span>
         </fieldset>
       </form>
@@ -67,7 +67,7 @@
               <th class="table__cell table__cell--header" scope="col">Currency name</th>
               <th class="table__cell table__cell--header" scope="col">Currency code</th>
               <th class="table__cell table__cell--header" scope="col">Buy rate</th>
-              <th class="table__cell table__cell--header" scope="col">Sell Rate</th>
+              <th class="table__cell table__cell--header" scope="col">Sell rate</th>
             </tr>
           </thead>
           <tbody>
@@ -90,7 +90,6 @@
               <td class="table__cell">4,8304</td>
               <td class="table__cell">4,9280</td>
             </tr>
-
         </table>
     </div>
     </section>
