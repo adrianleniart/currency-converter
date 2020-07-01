@@ -31,7 +31,7 @@
           <legend class="form__legend">Currency calculator</legend>
 
           <label class="form__label">*Amount to exchange&#58</span>
-            <input class="js-amount" type="number" name="amount" placeholder="Please enter the amount" required
+            <input class="js-amount" type="number" name="amount" placeholder="Please enter the amount " required
               step="0.01" value="100">
           </label>
 
@@ -58,6 +58,42 @@
       </form>
     </section>
 
+    <div class="container">
+      <section class="table">
+        <table class="table__header">
+          <caption class="table__caption">Exchange rates</caption>
+          <thead>
+            <tr class="table__row">
+              <th class="table__cell table__cell--header" scope="col">Currency name</th>
+              <th class="table__cell table__cell--header" scope="col">Currency code</th>
+              <th class="table__cell table__cell--header" scope="col">Buy rate</th>
+              <th class="table__cell table__cell--header" scope="col">Sell Rate</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="table__row">
+              <th class="table__cell table__cell--header" scope="row">Dolar</th>
+              <td class="table__cell">&dollar;</td>
+              <td class="table__cell">3,9268</td>
+              <td class="table__cell">4,0062</td>
+            </tr>
+            <tr class="table__row">
+              <th class="table__cell table__cell--header" scope="row">Euro</th>
+              <td class="table__cell">&euro;</td>
+              <td class="table__cell">4,4012</td>
+              <td class="table__cell">4,4902</td>
+
+            </tr>
+            <tr class="table__row">
+              <th class="table__cell table__cell--header" scope="row">British Pound</th>
+              <td class="table__cell">&pound;</td>
+              <td class="table__cell">4,8304</td>
+              <td class="table__cell">4,9280</td>
+            </tr>
+
+        </table>
+    </div>
+    </section>
   </main>
   <footer>
 
